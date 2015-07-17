@@ -40,4 +40,9 @@
         $('#minT').val(resp)
       });
     });
+    $('#maxTeb').click(function(){
+      $.post('maxT',{maxT:$('#maxTe').val()},function(resp){
+        $('#maxT').val(resp)
+      });
+    });
 });
