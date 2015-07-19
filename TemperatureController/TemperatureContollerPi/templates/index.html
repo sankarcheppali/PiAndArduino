@@ -1,0 +1,40 @@
+ <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Temperature Controller</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static',filename='js/jquery.dropotron.min.js')}}"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="{{ url_for('static',filename='js/guage.js')}}"></script>
+	</head>
+<body class="homepage">
+		
+			<center>
+			<h1><a href="">Temperature Controller</a></h1>
+			<div id="chart_div" style="width: 400px; height: 120px;">
+			</div>
+			<table style="width:50%">
+				  <tr>
+				     <th>Attribute</th>
+					 <th>Value</th>
+					 <th>Edit</th>
+					 <th></th>
+				  </tr>
+				     <tr>
+							<td>Min Cutoff</td>
+							<td> <div class="5u"><input type="text" name="minT" id="minT" value="{{minT}}" disabled /> </div></td>
+							<td> <div class="5u"><input type="text" name="minTe" id="minTe"/> </div></td>
+							<td><input type="button" name="minTeb" value="Update" id="minTeb"/> </td>
+					 </tr> 		
+				     <tr>
+							<td>Max Cutoff</td>
+							<td> <div class="5u"><input type="text" name="maxT" id="maxT" value="{{maxT}}" disabled /> </div></td>
+							<td> <div class="5u"><input type="text" name="maxTe" id="maxTe"/> </div></td>							
+							<td><div class="3u"><input type="button" name="maxTeb" value="Update" id="maxTeb"/> </div></td>
+					 </tr> 		
+
+			</center>
+	</body>
+</html>
