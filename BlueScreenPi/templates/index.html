@@ -1,0 +1,41 @@
+ <!DOCTYPE HTML>
+<!--
+	
+-->
+<html>
+	<head>
+<meta http-equiv="refresh" content="15">
+		<title>BlueScreen</title>
+<script>
+
+function init()
+{
+ document.getElementById("scr").addEventListener('onFinish',check);
+
+}
+function check()
+{
+alert("finiesh");
+}
+
+window.onload=init;
+</script>
+		<style>
+		p,h1{
+		 font-size:50px;
+		}
+		</style>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		
+	<div>
+						
+<p id="msg">{{msg|safe}}</p>
+	</div>
+					
+				
+		
+	</body>
+</html>
